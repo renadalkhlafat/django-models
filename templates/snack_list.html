@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content%}
+<h1>Snacks</h1>
+<div class="grid-container">
+    {% for snack in object_list %}
+    <div class="grid-item">
+        <h4>
+            <a href="{% url 'snack_detail' snack.pk %}"> {{snack.name}}</a>
+        </h4>
+    </div>
+
+    {% endfor %}
+</div>
+{% endblock%}

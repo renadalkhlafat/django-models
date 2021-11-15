@@ -1,0 +1,12 @@
+{% extends "base.html"%}
+
+{% block content%}
+<div class="card">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/01ec06118988613.609416522260a.jpg" alt="Avatar" style="width:100%">
+    <div class="container">
+      <h4><b>{{snack_object.name}}</b></h4> 
+      <p><b>Purchaser:</b> {{snack_object.purchaser }}</p>
+      <p><b>Description:</b> {{snack_object.description}}</p>
+    </div>
+  </div>
+{% endblock %}
